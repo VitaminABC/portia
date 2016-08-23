@@ -1,0 +1,5 @@
+{{#tree-list-item as |options|}}
+    {{list-item-icon icon='url-feed'}}
+    {{list-item-editable value=(mut viewUrl) editing=isEditing spellcheck=false}}
+    {{list-item-icon icon='remove' action=(action removeStartUrl) bubbles=false}}
+{{/tree-list-item}}

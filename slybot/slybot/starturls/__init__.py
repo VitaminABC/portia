@@ -40,7 +40,7 @@ class StartUrlCollection(object):
     def _url_type(self, start_url):
         if isinstance(start_url, six.string_types):
             return StringUrl(start_url, self.generator_type)
-        if not (start_url.get('url') and start_url.get('type')):
+        if start_url.get('paths'):
             return GeneratedUrl(start_url, self.generator_type)
         return StartUrl(start_url, self.generators)
 
