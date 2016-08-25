@@ -71,6 +71,7 @@ function generatedUrl(spec) {
 
     urlObject.isGenerated = true;
     urlObject.componentName = 'project-structure-spider-generated-url';
+    urlObject.optionsComponentName = 'generated-url-options';
 
     urlObject.save = saveStartUrl(urlObject);
     urlObject.toString = toString;
@@ -96,6 +97,7 @@ function feedUrl(spec) {
 
     urlObject.isGenerated = false;
     urlObject.componentName = 'project-structure-spider-feed-url';
+    urlObject.optionsComponentName = 'feed-url-options';
 
     urlObject.save = saveStartUrl(urlObject);
     urlObject.toString = toString;

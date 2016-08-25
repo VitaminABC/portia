@@ -1,0 +1,16 @@
+<div class="spaced">
+    <p class="txt-describe">
+        Enter a publicly available URL containing newline separated URLs.
+    </p>
+</div>
+
+<div class="spaced">
+    <label for="feedUrl">Feed URL</label>
+    {{input
+      type="text"
+      id='feedUrl'
+      class="form-control"
+      value=(mut startUrl.url)
+      placeholder='https://gist.github.com/user/gist_id'
+    }}
+</div>
