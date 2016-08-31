@@ -60,7 +60,8 @@ export default Ember.Component.extend({
 
         addFeedUrl() {
             const spider = this.get('spider');
-            this.get('dispatcher').addFeedUrl(spider, '');
+            let newStartUrl = this.get('dispatcher').addFeedUrl(spider, '');
+            this.get('transitionToFragments')(spider.get('startUrls').indexOf(newStartUrl));
         },
 
         removeStartUrl(startUrl) {
